@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace GreenCityManagement.Models
 {
     public class District
     {
-        public int ID_district { get; set; }
+        [Key] public int ID_district { get; set; }
         public string Name { get; set; }
         public string? Description { get; set; }
-    }
 
+        public List<Plant> Plants { get; set; }
+    }
 }

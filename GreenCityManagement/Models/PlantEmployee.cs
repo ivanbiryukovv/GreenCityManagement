@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace GreenCityManagement.Models
 {
     public class PlantEmployee
     {
-        public int ID_plant_employee { get; set; }
+        [Key] public int ID_plant_employee { get; set; }
         public int ID_plant { get; set; }
         public int ID_employee { get; set; }
-    }
 
+        public Plant Plant { get; set; }
+        public Employee Employee { get; set; }
+    }
 }
