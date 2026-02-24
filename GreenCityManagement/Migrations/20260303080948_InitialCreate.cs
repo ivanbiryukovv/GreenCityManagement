@@ -80,9 +80,7 @@ namespace GreenCityManagement.Migrations
                     ID_plant_type = table.Column<int>(type: "int", nullable: false),
                     ID_district = table.Column<int>(type: "int", nullable: false),
                     Planting_date = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Health_status = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Latitude = table.Column<decimal>(type: "decimal(9,6)", nullable: false),
-                    Longitude = table.Column<decimal>(type: "decimal(9,6)", nullable: false)
+                    Health_status = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

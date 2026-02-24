@@ -1,0 +1,19 @@
+<Window x:Class="GreenCityManagement.Dialogs.AddPlantPassportDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавить паспорт растения" Height="270" Width="350" ResizeMode="NoResize">
+    <StackPanel Margin="15">
+        <TextBlock Text="ID растения *"/>
+        <TextBox x:Name="PlantIdBox" Margin="0,4,0,10"/>
+        <TextBlock Text="Высота (м) *"/>
+        <TextBox x:Name="HeightBox" Margin="0,4,0,10"/>
+        <TextBlock Text="Возраст (лет) *"/>
+        <TextBox x:Name="AgeBox" Margin="0,4,0,10"/>
+        <TextBlock Text="Дата последнего осмотра * (дд.мм.гггг)"/>
+        <TextBox x:Name="DateBox" Margin="0,4,0,15"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Сохранить" Width="80" Margin="0,0,8,0" Click="Save_Click"/>
+            <Button Content="Отмена"   Width="80" Click="Cancel_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

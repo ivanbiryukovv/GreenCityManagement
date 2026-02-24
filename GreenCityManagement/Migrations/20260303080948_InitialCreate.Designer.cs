@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GreenCityManagement.Migrations
 {
     [DbContext(typeof(GreenCityContext))]
-    [Migration("20260223114540_InitialCreate")]
+    [Migration("20260303080948_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -124,12 +124,6 @@ namespace GreenCityManagement.Migrations
 
                     b.Property<int>("ID_plant_type")
                         .HasColumnType("int");
-
-                    b.Property<decimal>("Latitude")
-                        .HasColumnType("decimal(9,6)");
-
-                    b.Property<decimal>("Longitude")
-                        .HasColumnType("decimal(9,6)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -322,8 +316,7 @@ namespace GreenCityManagement.Migrations
 
                     b.Navigation("PlantEmployees");
 
-                    b.Navigation("PlantPassport")
-                        .IsRequired();
+                    b.Navigation("PlantPassport");
                 });
 
             modelBuilder.Entity("GreenCityManagement.Models.PlantType", b =>

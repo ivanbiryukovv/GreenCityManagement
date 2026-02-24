@@ -122,12 +122,6 @@ namespace GreenCityManagement.Migrations
                     b.Property<int>("ID_plant_type")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Latitude")
-                        .HasColumnType("decimal(9,6)");
-
-                    b.Property<decimal>("Longitude")
-                        .HasColumnType("decimal(9,6)");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -319,8 +313,7 @@ namespace GreenCityManagement.Migrations
 
                     b.Navigation("PlantEmployees");
 
-                    b.Navigation("PlantPassport")
-                        .IsRequired();
+                    b.Navigation("PlantPassport");
                 });
 
             modelBuilder.Entity("GreenCityManagement.Models.PlantType", b =>
