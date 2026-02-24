@@ -50,8 +50,6 @@ CREATE TABLE Plant
     Planting_date DATE NOT NULL,
     Health_status NVARCHAR(20) NOT NULL
         CHECK (Health_status IN ('Отличное','Хорошее','Удовлетворительное','Плохое')),
-    Latitude DECIMAL(9,6) NOT NULL,
-    Longitude DECIMAL(9,6) NOT NULL,
 
     CONSTRAINT FK_Plant_PlantType FOREIGN KEY (ID_plant_type)
         REFERENCES PlantType(ID_plant_type),
@@ -80,7 +78,6 @@ GO
 CREATE TABLE Employee
 (
     ID_employee INT IDENTITY(1,1) PRIMARY KEY,
-    Full_name NVARCHAR(100) NOT NULL,
     Position NVARCHAR(50) NOT NULL,
     Phone NVARCHAR(11) NOT NULL UNIQUE
         CHECK (LEN(Phone) = 11)
