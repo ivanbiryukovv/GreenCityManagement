@@ -1,0 +1,233 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram id="VXMTmCMhXb09OQzfF6Rh" name="Страница — 1">
+    <mxGraphModel dx="1710" dy="1030" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="СИСТЕМА УПРАВЛЕНИЯ ЗЕЛЁНЫМИ НАСАЖДЕНИЯМИ" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="20" width="700" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="200" y="70" width="1050" height="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_workers" value="управлять&#xa;работниками" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="220" y="265" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_add_worker" value="добавить&#xa;работника" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="240" y="160" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_del_worker" value="удалить&#xa;работника" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="450" y="180" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_edit_worker" value="изменить данные&#xa;работника" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="630" y="180" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=classic;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;" parent="1" source="uc_add_worker" target="uc_workers" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1l" value="extend" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" parent="e1" vertex="1" connectable="0">
+          <mxGeometry relative="0.5" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=classic;endFill=1;startArrow=none;startFill=0;" parent="1" source="uc_del_worker" target="uc_workers" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="240" />
+              <mxPoint x="300" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2l" value="extend" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" parent="e2" vertex="1" connectable="0">
+          <mxGeometry relative="0.5" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=classic;endFill=1;startArrow=none;startFill=0;" parent="1" source="uc_edit_worker" target="uc_workers" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="205" />
+              <mxPoint x="620" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3l" value="extend" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" parent="e3" vertex="1" connectable="0">
+          <mxGeometry relative="0.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_refs" value="управлять&#xa;справочниками" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="210" y="490" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_add_type" value="добавить тип&#xa;растения" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="470" y="625" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_add_worktype" value="добавить тип&#xa;работ" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="470" y="680" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_add_district" value="добавить&#xa;район" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="400" y="570" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;entryX=0.382;entryY=1.046;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="uc_add_type" target="uc_refs" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4l" value="extend" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" parent="e4" vertex="1" connectable="0">
+          <mxGeometry relative="0.5" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;entryX=0.263;entryY=0.941;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="uc_add_worktype" target="uc_refs" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5l" value="extend" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" parent="e5" vertex="1" connectable="0">
+          <mxGeometry relative="0.5" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;" parent="1" source="uc_add_district" target="uc_refs" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6l" value="extend" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" parent="e6" vertex="1" connectable="0">
+          <mxGeometry relative="0.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_stats" value="просмотреть&#xa;статистику&#xa;обслуживания" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="220" y="800" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" style="endArrow=none;" parent="1" target="uc_workers" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="330.55555555555554" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a2" style="endArrow=none;" parent="1" target="uc_refs" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="356.51162790697674" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a3" style="endArrow=none;" parent="1" target="uc_stats" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90.90909090909099" y="370" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc_view_plants" value="просмотреть&#xa;список растений" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="150" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_plants" value="управлять&#xa;растениями" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="310" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_add_plant" value="добавить&#xa;растение" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="800" y="200" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_del_plant" value="удалить&#xa;растение" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="800" y="360" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_edit_plant" value="изменить данные&#xa;растения" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="930" y="400" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ep1" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=classic;endFill=1;startArrow=none;startFill=0;" parent="1" source="uc_add_plant" target="uc_plants" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ep1l" value="extend" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" parent="ep1" vertex="1" connectable="0">
+          <mxGeometry relative="0.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ep2" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=classic;endFill=1;entryX=0.047;entryY=0.669;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" parent="1" source="uc_del_plant" target="uc_plants" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ep2l" value="extend" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" parent="ep2" vertex="1" connectable="0">
+          <mxGeometry relative="0.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ep3" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=classic;endFill=1;startArrow=none;startFill=0;" parent="1" source="uc_edit_plant" target="uc_plants" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ep3l" value="extend" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" parent="ep3" vertex="1" connectable="0">
+          <mxGeometry relative="0.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_maintenance" value="управлять&#xa;обслуживанием" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="480" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_add_maint" value="добавить запись&#xa;об обслуживании" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="780" y="485" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_edit_maint" value="изменить запись&#xa;об обслуживании" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="820" y="570" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="em1" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;" parent="1" source="uc_add_maint" target="uc_maintenance" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="em1l" value="extend" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" parent="em1" vertex="1" connectable="0">
+          <mxGeometry relative="0.5" as="geometry" />
+        </mxCell>
+        <mxCell id="em2" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=classic;endFill=1;" parent="1" source="uc_edit_maint" target="uc_maintenance" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="em2l" value="extend" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=10;" parent="em2" vertex="1" connectable="0">
+          <mxGeometry relative="0.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_passport" value="просмотреть&#xa;паспорт растения" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="620" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w1" style="endArrow=none;" parent="1" target="uc_view_plants" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1330" y="318.15329264540526" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w2" style="endArrow=none;" parent="1" target="uc_plants" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1330" y="335.545259860951" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w3" style="endArrow=none;" parent="1" target="uc_maintenance" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1330" y="353.2318839231199" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w4" style="endArrow=none;" parent="1" target="uc_passport" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1330" y="367.814007938161" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc_view_plants2" value="просмотреть&#xa;список растений" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="720" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_report" value="сформировать&#xa;отчёт о состоянии&#xa;насаждений" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="820" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_health" value="обновить состояние&#xa;здоровья растения" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="920" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" style="endArrow=none;" parent="1" target="uc_view_plants2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1330" y="736.5704720867641" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" style="endArrow=none;" parent="1" target="uc_report" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1330" y="746.9831273909008" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3" style="endArrow=none;" parent="1" target="uc_health" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1330" y="757.398054905067" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ag1" style="endArrow=none;dashed=0;" parent="1" target="uc_plants" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="335.12019230769226" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ag2" style="endArrow=none;dashed=0;" parent="1" target="uc_maintenance" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="339.2067307692307" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ag3" style="endArrow=none;dashed=0;" parent="1" target="uc_report" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="347.37980769230774" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tDpxvdmpa7Q57hFS9rlM-1" value="Администратор" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="310" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tDpxvdmpa7Q57hFS9rlM-3" value="Работник" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="310" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tDpxvdmpa7Q57hFS9rlM-4" value="Менеджер по учету" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="710" width="30" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
