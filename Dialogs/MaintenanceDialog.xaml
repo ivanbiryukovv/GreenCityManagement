@@ -1,0 +1,30 @@
+<Window x:Class="GreenCityManagement.Dialogs.MaintenanceDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Обслуживание" Height="340" Width="400" ResizeMode="CanResize"
+        WindowStartupLocation="CenterOwner">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="20">
+            <TextBlock Text="Растение *" Margin="0,0,0,3"/>
+            <ComboBox x:Name="PlantCombo" Height="26" DisplayMemberPath="Name" SelectedValuePath="ID_plant" Margin="0,0,0,10"/>
+            <TextBlock Text="Вид работы *" Margin="0,0,0,3"/>
+            <ComboBox x:Name="WorkTypeCombo" Height="26" DisplayMemberPath="Name" SelectedValuePath="ID_work_type" Margin="0,0,0,10"/>
+            <TextBlock Text="Сотрудник *" Margin="0,0,0,3"/>
+            <ComboBox x:Name="EmployeeCombo" Height="26" SelectedValuePath="ID_employee" Margin="0,0,0,10">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding FullName}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <TextBlock Text="Дата работы *" Margin="0,0,0,3"/>
+            <DatePicker x:Name="DatePicker" Height="26" Margin="0,0,0,10"/>
+            <TextBlock Text="Результат *" Margin="0,0,0,3"/>
+            <TextBox x:Name="ResultBox" Height="26" Margin="0,0,0,20"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Сохранить" Width="90" Height="28" Margin="0,0,8,0" Click="Save_Click"/>
+                <Button Content="Отмена"    Width="90" Height="28" Click="Cancel_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
